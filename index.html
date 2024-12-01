@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign-up form exercise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="leftside">
+        <div class="marginlogo">
+            <img src="images/odin-lined.png" alt="Odin logo" height="250px">
+            <p>ODIN</p>
+        </div>
+    </div>
+    <div class="rightside">
+        <div class="formdiv header">
+            <header>
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</h1>
+            </header>
+        </div>
+        <div class="formdiv formarea">
+            <h2>Fill out the form and click "Create account"</h2>
+            <p>Required fields are marked with<span class="required"> *</span></p>
+                <form action="#" class="form">
+                    <div>
+                        <p><label for="firstname">First name</label><span class="required"> *</span></p>
+                        <input type="text" id="firstname" name="firstname" placeholder="John">
+                    </div>
+                    <div>
+                        <p><label for="lastname">Last name</label><span class="required"> *</span></p>
+                        <input type="text" id="lastname" name="lastname" placeholder="Smith">
+                    </div>
+
+                    <div>
+                        <p><label for="email">Email</label><span class="required"> *</span></p>
+                        <input type="email" id="email" name="email" placeholder="example@email.com">
+                    </div>
+                    <div>
+                        <p><label for="phonenumber">Phone number</label></p>
+                        <input type="tel" id="phonenumber" name="phonenumber" inputmode="numeric" placeholder="1234567">
+                    </div>
+
+                    <div>
+                        <p><label for="password">Password</label><span class="required"> *</span></p>
+                        <input type="password" id="password" name="password" pattern=".{8,16}">
+                    </div>
+                    <div>
+                        <p><label for="password">Confirm password</label><span class="required"> *</span></p>
+                        <input type="password" id="password" name="password" pattern=".{8,16}">
+                    </div>
+                </form>
+        </div>
+        <div class="formdiv buttonarea">
+            <button type="button" class="submitbutton">Create account</button>
+            <div>
+                <p>Already have an account? <a href="#"> Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
